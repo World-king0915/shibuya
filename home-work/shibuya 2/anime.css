@@ -1,0 +1,38 @@
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Fjalla One", sans-serif;
+
+}
+
+div{
+   width: 600px;
+   height: 400px;
+   background-color: blue;
+   animation: div 3s infinite;
+   margin: 0 auto;
+}
+
+@keyframes div{
+    0%{
+      background-image:url(https://kalashnikov.media/ak70/images/promo.png) ;
+      margin-top: 0;
+    }
+
+    25%{
+      background-image:url(https://avatanplus.com/files/resources/original/582f74ca06f8e1587960352d.png) ;
+    }
+
+    50%{
+      background-image: url(https://e7.pngegg.com/pngimages/475/766/png-clipart-ak-47-assault-rifle-7-62%C3%9739mm-firearm-ak-47-ak47-machine-gun.png);
+    }
+
+    75%{
+      background-image:url(https://cdn.kalashnikovgroup.ru/static/images/g/s/o/gso-28926-403.png) ;
+    }
+
+    100%{
+      background-image: url(https://img.kalashnikovgroup.ru/2120,fit/https://cdn.kalashnikovgroup.ru/static/images/g/u/s/gus-6463-new-21489-1080.jpg);
+    }
+}
