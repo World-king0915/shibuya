@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+
+* {
+   padding: 0;
+   margin: 0;
+   box-sizing: border-box;
+   font-family: "Fjalla One", sans-serif;
+
+}
+
+body{
+  background-image: url(https://shibuya-bay.vercel.app/loader-bg.jpg);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: top;
+   
+  background-attachment: fixed;
+}
+
+.open{
+  height: 15vh;
+  background-image: url(https://shibuya-bay.vercel.app/bg-2.png); 
+  
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: top;
+   
+  background-attachment: fixed;
+
+  color: #e69aa4;
+ animation-name: anim1;
+
+ animation-duration: 4s;
+
+ p{
+  padding-top: 30px;
+  font-size: clamp(1.125rem, .939rem + .76vw, 1.75rem);
+ }
+
+}
+.NEXT{
+  width: 100%;
+  background-image: url(https://shibuya-bay.vercel.app/bg-2.png);
+
+  background-repeat: no-repeat;
+
+  background-size: cover;
+
+  background-position: top;
+   
+  background-attachment: fixed;
+
+  animation-name: anim2 ;
+  animation-duration: 4s;
+
+  color: #e69aa4;
+  height: 20vh;
+  display: flex;
+  justify-content: center;
+   p{
+    margin-left: 300px;
+    margin-top: 50px;
+ 
+    line-height: 1.2;
+   }
+  img{
+  width: 60px;
+  height: 60px;
+  margin-left:300px;
+  margin-top: 30px;
+  }
+}
+
+.enter{
+  height: 65vh;
+
+
+  animation-name: text;
+  animation-duration: 4s;
+
+.station{
+  padding-top: 100px;
+}
+
+h2{
+  font-size: clamp(3.75rem, .215rem + 14.5vw, 15.625rem);
+}
+p{
+  font-size: clamp(1.25rem, .692rem + 2.29vw, 3.125rem);
+}
+ a{
+  text-decoration: none;
+  color: antiquewhite;
+  text-align: center;
+ }
+}
+
+
+
+
+
+
+h1,p{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@keyframes anim1 {
+  0% {
+    transform: translateY(-100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes anim2 {
+  0% {
+    transform: translateY(100%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes text {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
