@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+body {
+    background-image: url(https://shibuya-bay.vercel.app/bg-1.png);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fjalla One", sans-serif;
+    color: #251607;
+}
+
+.container {
+    max-width: 1700px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    a {
+        text-decoration: none;
+        color: #251607;
+        /* font-size: 30px */
+        font-size: clamp(0.875rem, 0.0625rem + 2.6vw, 2.5rem);
+        font-weight: 600;
+    }
+
+    div {
+        img {
+            width: clamp(1.875rem, 1.2388rem + 2.6786vw, 3.75rem);
+        }
+    }
+}
+
+.incubator {
+   h1 {
+    font-size: clamp(7.5rem, 3.3022rem + 18.6567vw, 23.125rem);
+       text-align: center;
+       color: #251607;
+       line-height: clamp(6.625rem, 0.1772rem + 28.6567vw, 30.625rem);
+       text-transform: uppercase;
+
+       
+   }
+
+
+   p {
+       font-size: clamp(1rem, 0.7649rem + 1.0448vw, 1.875rem);
+       color: #251607;
+       text-align: center;
+       line-height: clamp(1rem, 0.7649rem + 1.0448vw, 1.875rem);
+   }
+}
+
+.image {
+    padding: 50px 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 10px;
+
+    
+ 
+    .img1 {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    
+    }
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
+ }
+.card1,.card2,.card3,.card4,.card5{
+   display: flex;
+   justify-content: space-between;
+   padding: 15px;
+   border: 3px solid#000;
+   margin: 10px 0;
+   align-items: center;
+   
+}
+
+
+
+.more{
+   width: 100%;
+   height: 100%;
+   min-height: 100%;
+   span{
+    color: gray;
+   }
+   p{
+    font-size: 15px;
+    text-transform: uppercase;
+   }
+   h1{
+    font-size: 30px;
+    margin-bottom: 5px;
+   }
+
+}
+
+
+
+.bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    align-items: center;
+    padding: 50px 0;
+
+    .img1 {
+        width: 100%;
+    }
+
+    .img2 {
+        width: 100%;
+    }
+}
+
+
+footer{
+
+    .container{
+        :nth-child(1){
+            align-items: center;
+            justify-content: center;
+            font-size: clamp(3.375rem, 0.5877rem + 12.3881vw, 13.75rem);
+        }
+    }
+    
+
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+
+    a {
+        text-decoration: none;
+        color: #251607;
+        /* font-size: 30px */
+        font-size: clamp(0.9375rem, 0.8535rem + 0.3731vw, 1.25rem);
+        font-weight: 600;
+    }
+
+
+}
