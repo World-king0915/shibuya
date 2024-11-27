@@ -12,10 +12,31 @@ body {
     color: #251607;
 }
 
+.texts-img {
+    @media (max-width:768px) {
+        .img1 {
+            display: none;
+        }
+    }
+
+}
+
 .container {
     max-width: 1700px;
     width: 95%;
     margin: 0 auto;
+}
+
+header{
+   @media (max-width:425px) {
+    background-color: #251607;
+    height: 66px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding: 20px;
+   }
 }
 
 nav {
@@ -36,6 +57,10 @@ nav {
         img {
             width: clamp(1.875rem, 1.2388rem + 2.6786vw, 3.75rem);
         }
+    }
+    
+    @media (max-width:425px) {
+        display: none;
     }
 }
 
@@ -76,32 +101,40 @@ nav {
 
     img {
         width: 150%;
+        height: 200px;
 
+
+        @media (max-width:768px) {
+            width: 250%;
+        }
+
+        @media (max-width:425px) {
+            width: 500%;
+        }
     }
+
+
 }
 
 .haru-wrap {
     display: flex;
     justify-content: space-between;
     gap: 50px;
+
+    @media (max-width:768px) {
+        flex-direction: column-reverse;
+    }
 }
 
 .haru-box-1 {
-    width: 100%;
     img {
         width: 100%;
-    
         filter: brightness(1) sepia(10%) saturate(400%);
-    }
-    p{
-        font-size: 15px;
-        font-weight: 400;
     }
 }
 
 
 .haru-box-2 {
-
     h1 {
         font-size: clamp(4rem, 2.1362rem + 8.2836vw, 10.9375rem);
         text-transform: uppercase;
@@ -110,7 +143,7 @@ nav {
     }
 
     p {
-        font-size: 15px;
+        font-size: 22px;
         text-align: end;
         padding: 20px 0;
     }
@@ -120,6 +153,7 @@ nav {
         padding-bottom: 20px;
     }
 }
+
 
 .plans {
     padding: 50px 0px;
@@ -143,6 +177,16 @@ nav {
         "box1 box2 box3"
         "box1 box4 box5";
 
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "box5"
+            "box2"
+            "box3"
+            "box4"
+            "box1";
+    }
+
     div {
         min-height: 400px;
         background-size: cover;
@@ -157,7 +201,6 @@ nav {
             h1 {
                 transform: scale(1.2);
             }
-
         }
 
         h1 {
@@ -210,10 +253,15 @@ nav {
 }
 
 .plans-img {
+    padding-top: 20px;
     display: flex;
     justify-content: space-between;
-    padding-top: 20px;
     align-items: center;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 }
 
 
@@ -222,7 +270,12 @@ nav {
     grid-template-columns: 10fr 1fr;
     gap: 50px;
     align-items: center;
+
+    @media (max-width:768px) {
+        grid-template-columns: 1fr;
+    }
 }
+
 
 .team-text {
     h1 {
@@ -230,11 +283,19 @@ nav {
         text-transform: uppercase;
     }
 
-    .team-text-grid {
 
+    .team-text-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
+
+        @media (max-width:768px) {
+            grid-template-columns: repeat(4, 1fr);
+        }
+
+        @media (max-width:425px) {
+            grid-template-columns: repeat(1, 1fr);
+        }
 
         div {
             min-height: 290px;
@@ -242,8 +303,8 @@ nav {
             height: 290px;
             background-size: cover;
             background-position: center;
-
         }
+
 
         .card1 {
             background-image: url(https://shibuya-bay.vercel.app/assets/team-2-f8113e02.png);
@@ -261,22 +322,29 @@ nav {
             background-image: url(https://shibuya-bay.vercel.app/assets/team-1-71317594.png);
         }
     }
-
 }
 
-
 .team-img {
+
+    @media (max-width:768px) {
+        display: none;
+    }
+
     img {
         width: 100%;
     }
 }
 
-
 .nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px 0;
+    padding: 20px 0;
+
+    @media (max-width:768px) {
+        flex-direction: column;
+        gap: 30px;
+    }
 
     a {
         text-decoration: none;
@@ -285,10 +353,7 @@ nav {
         font-size: clamp(0.9375rem, 0.8535rem + 0.3731vw, 1.25rem);
         font-weight: 600;
     }
-
-
 }
-
 
 .bottom {
     display: flex;
@@ -296,6 +361,17 @@ nav {
     gap: 50px;
     align-items: center;
     padding: 50px 0;
+
+    .div1 {
+        @media (max-width:768px) {
+            display: flex;
+            flex-direction: column-reverse;
+        }
+    }
+
+    @media (max-width:768px) {
+        flex-direction: column;
+    }
 
     .img1 {
         width: 100%;
@@ -306,16 +382,10 @@ nav {
     }
 }
 
-
-footer{
-
-    .container{
-        :nth-child(1){
-            align-items: center;
-            justify-content: center;
-            font-size: clamp(3.375rem, 0.5877rem + 12.3881vw, 13.75rem);
-        }
+footer {
+    h1 {
+        text-transform: uppercase;
+        font-size: clamp(6.5rem, 1.5558rem + 10.3004vw, 12.5rem);
+        text-align: center;
     }
-    
-
 }
